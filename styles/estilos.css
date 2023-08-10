@@ -1,0 +1,862 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --color1: #14140F;
+    --color2: #053D38;
+    --color3: #34675C;
+    --color4: #A3CCAB;
+    --color5: #F26800;
+
+
+}
+
+body {
+    background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 0;
+
+
+}
+
+h2 {
+
+    color: #ffffffee;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#header .dota {
+    display: flex;
+    align-items: center;
+
+}
+
+#header .dota a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#header .juega-gratis a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    margin: 8px auto;
+
+}
+
+#header .juega-gratis i {
+    margin: auto 10px;
+}
+
+header .juega-gratis button {
+    border: 3px solid #ffffff50;
+    margin: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+    font-size: 20px;
+    background: #a1969600;
+
+}
+
+header .juega-gratis button:hover {
+    border: 3px solid #ff6046;
+    transform: translateY(-2px);
+}
+
+#header h1 {
+    font-size: 40px;
+    line-height: 113%;
+    font-family: "Reaver", serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: #ffffffee;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #000;
+}
+
+#header img {
+    width: 100%;
+    max-width: 80px;
+}
+
+
+.padded {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#barra-navegacion a {
+    color: #9b9b9b !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    margin: 0px 10px;
+    z-index: 0;
+}
+
+#barra-navegacion a:hover {
+    color: white !important;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+
+}
+
+#main-contenido {
+    background-color: transparent;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+
+}
+
+#noticias {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+#noticias .ultimas {
+    position: absolute;
+    top: 83%;
+    bottom: 0%;
+    left: 25%;
+    right: 25%;
+    color: #fff;
+    text-align: center;
+
+}
+
+#noticias .ultimas h1 {
+    font-size: 20px;
+}
+
+#noticias img {
+    cursor: pointer;
+    width: 100%;
+    max-width: 370px;
+    height: 245px;
+
+
+}
+
+#noticias .col {
+    position: relative;
+}
+
+#noticias .contenido h2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+#noticias .contenido {
+    position: absolute;
+    width: 94%;
+    min-height: 250px;
+    top: 0;
+
+    bottom: 0;
+    line-height: 115%;
+    cursor: pointer;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 15px;
+}
+
+#noticias .contenido:hover {
+    opacity: 1;
+
+}
+
+#noticias .contenido span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, .7);
+
+}
+
+#noticias .contenido p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, .7);
+    font-family: "Radiance", "Noto Sans", sans-serif;
+    line-height: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+#novedades {
+    background-image: url(/imagenes/ancestros.jpg);
+    position: relative;
+    background-size: 2500px;
+    height: 100%;
+    min-height: 1000px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 47%) 1px 1005px 0px 0px inset;
+}
+
+#novedades h1 {
+    font-weight: 700;
+    color: rgb(226, 218, 206);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 105%;
+    font-size: 110px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.novedades-mas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto auto auto;
+    width: 100%;
+    max-width: 1000px;
+    color: #e2dace;
+    font-size: 26px;
+}
+
+#novedades button {
+    border: 3px solid rgba(255, 255, 255, 0.314);
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    transition-duration: 0.2s;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#novedades button:hover {
+    border: 3px solid #ff6046;
+    transform: translateY(-2px);
+}
+
+#sombreado {
+    background-color: #000;
+    height: 150px;
+}
+
+#nose {
+    background-image: url("/imagenes/novedades.jpg");
+    position: relative;
+    background-size: 3500px;
+    height: 100%;
+    min-height: 1600px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    box-shadow: rgb(0 0 0 / 24%) 1px 1602px 0px 0px inset;
+}
+
+#nose .elige {
+    display: block;
+    justify-content: center;
+
+    margin: 150px auto;
+}
+
+#nose .elige h2 {
+    font-size: 110px;
+    text-align: center;
+}
+
+.padre {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    bottom: 50%;
+    color: #fff;
+
+}
+
+.padre p {
+    margin-top: 30px;
+    color: #e2dace;
+    font-size: 26px;
+    line-height: 115%;
+    text-align: center;
+}
+
+.padre button {
+    border: 3px solid #ffffff50;
+    padding: 15px 25px;
+    margin: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+    background-color: #000;
+    color: #fff;
+    margin: auto;
+    font-size: 20px;
+
+}
+
+.padre button:hover {
+    border: 3px solid #ff6046;
+    transform: translateY(-2px);
+}
+
+#profesional {
+    background-image: url("/imagenes/ti.jpg");
+    width: 100%;
+    height: 1450px;
+    background-color: #000;
+
+    padding-bottom: 100px;
+    background-position: top;
+    background-size: 2300px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#profesional .enblema {
+    background-image: url("/imagenes/enblema.png");
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 110px;
+    position: absolute;
+    top: 24%;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    text-align: center;
+}
+
+#profesional .texto {
+    position: absolute;
+    top: 44%;
+    bottom: 0;
+    text-align: center;
+}
+
+#profesional .texto h2 {
+    font-size: 110px;
+}
+
+#profesional .texto p {
+    width: 60%;
+    font-size: 26px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+}
+
+
+#paises {
+    background-color: transparent;
+
+}
+
+#paises h2 {
+    color: #fff;
+    font-size: 110px;
+    text-align: center;
+}
+
+#paises h3 {
+    color: #fff;
+}
+
+#paises .descripcion {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#paises p {
+    font-size: 20px;
+    color: #fff;
+}
+
+#paises ul li {
+    cursor: pointer;
+    font-size: 23px;
+    background-color: transparent;
+    border: 1px solid #0d0d1a;
+    color: #fff;
+
+}
+
+#paises h4,
+span {
+    color: #fff;
+}
+
+#paises .list-group-item.active {
+
+    border-color: #222222;
+    background-color:#ff0000d1 ;
+}
+
+#juega {
+    background-image: url("/imagenes/fondo.jpg");
+    width: 100%;
+    margin-top: 20px;
+    background-size: cover;
+    background-repeat: none;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#juega .unete {
+    margin-left: 95px;
+}
+
+#juega .unete h2 {
+    font-size: 110px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 10px #602626;
+
+}
+
+#juega .unete button {
+    border: 3px solid #ffffff50;
+    padding: 15px 25px;
+    margin: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+#juega .unete a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#juega .unete button:hover {
+
+
+    border: 3px solid #ff6046;
+    transform: translateY(-2px);
+
+}
+
+#video {
+    min-height: 805px;
+    position: relative;
+}
+
+#video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 770px;
+    object-fit: cover;
+
+}
+
+#video .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 770px;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    color: red;
+}
+
+#footer {
+    background-color: #000;
+    color: var(--color4);
+    text-align: center;
+    padding: 45px;
+}
+
+#footer .imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#footer .derechos {
+    text-align: center;
+    font-size: 20px;
+    color: #777;
+    padding: 0 20px;
+    width: 800px;
+    margin: 20px auto;
+}
+
+#footer img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 46px;
+    margin: 0px 10%;
+}
+
+#personajes #card-imagen {
+    position: relative;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px #000;
+    filter: saturate(0.8);
+}
+
+#personajes .g-4,
+.gy-4 {
+    --bs-gutter-y: 23PX;
+}
+
+
+#personajes #card-imagen:hover {
+    transform: scale(1.2);
+    transition-duration: .3s;
+
+}
+
+.mas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0a0a38;
+
+
+}
+
+.mas img {
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+    height: 100%;
+}
+
+.mas span {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 800;
+    color: #dbd5d5;
+    background-color: transparent;
+    text-shadow: 1px 1px 5px #342525;
+
+    min-height: 20px;
+    line-height: 113%;
+
+
+}
+
+#card-imagen {
+    position: relative;
+}
+
+#card-imagen #imagen-heroe figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    color: white;
+}
+
+#card-imagen #imagen-heroe figcaption div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+#filtrar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: row;
+    margin: 30px 0px;
+    border: 1px solid #11111190;
+    box-shadow: 0px 0px 30px #00000050;
+    background-color: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+#filtrar h2 {
+    color: #808fa6;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 20px;
+
+}
+
+#filtrar img {
+
+    cursor: pointer;
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+
+
+}
+
+#filtrar .buscador {
+    width: 100%;
+    max-width: 700px;
+    margin-left: 10px;
+
+
+
+}
+
+#filtrar div {
+    margin: 0px 50px;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    background-color: #11111190;
+    padding: 3px;
+}
+
+#filtrar div input {
+    background-color: #11111190;
+    color: #ffffffee;
+    border: 1px solid black;
+
+}
+
+#filtrar div i {
+    font-size: 30px;
+    color: grey;
+
+}
+
+#torneos table {
+    margin: 50px 0px;
+    font-size: 22px;
+    color: #ffffffee;
+}
+
+#tbody-torneos tr {
+    cursor: pointer;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+    align-items: center;
+}
+
+#torneos .table-dark {
+    --bs-table-bg: #a1a1a1;
+}
+
+.oscuro {
+    filter: grayscale(80%);
+}
+
+.no-encontrado {
+    display: none;
+}
+
+#lista ul {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: left;
+    background-color: transparent;
+
+}
+
+#lista ul li {
+    list-style: none;
+    margin: 0px 1px;
+    border-radius: 0.375rem;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    border: 3px solid #ffffff50;
+    background-color: transparent;
+}
+#lista .active{
+    color: #fff;
+    background-color: #000000;
+    border: 3px solid #000000;
+
+}
+#lista ul li:hover{
+    
+    border: 3px solid #ff6046;
+    transform: translateY(-2px);
+}
+
+
+#contenido-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#contenido-card .card {
+    background-color: #fff;
+    border: 1px solid #000;
+
+}
+
+#contenido-card img {
+    width: 50%;
+    padding: 10px;
+
+    align-items: center;
+    height: 261px;
+
+    margin: auto;
+    position: relative;
+
+}
+
+#card-titulo {
+    text-align: center;
+    border-top: 1px solid #000;
+
+}
+
+#card-titulo h5 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 25px;
+
+}
+
+#jugadores-equipos {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    border-bottom: 1px solid #000;
+
+}
+
+#contenido-card img {
+    position: relative;
+}
+
+figure {
+    margin: 0px;
+}
+
+#contenido-card figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#contenido-card figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    display: none;
+    color: red;
+    
+
+
+}
+
+#contenido-card figcaption div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 4px 4px 10px #602626;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+#contenido-card figcaption div  h1{
+    color: red;
+}
+#contenido-card figure .player{
+color: red;
+}

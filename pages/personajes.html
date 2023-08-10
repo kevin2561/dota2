@@ -1,0 +1,28 @@
+<section id="personajes" class="padded">
+
+    <div class="container">
+        <div id="filtrar">
+            <h2>Filtrar Heroe</h2>
+
+            <h2>Atributo</h2>
+            <img id="fuerza" class="oscuro" src="/imagenes/Fuerza.jpg" alt="">
+            <img id="agilidad" class="oscuro" src="/imagenes/Agilidad.jpg" alt="">
+            <img id="inteligencia" class="oscuro" src="/imagenes/Inteligencia.jpg" alt="">
+
+
+            <div>
+
+                <i class="bi bi-search"></i>
+                <input id="buscador-heroe" type="text" class="form-control buscador" placeholder="Buscar Heroe">
+            </div>
+        </div>
+        <div id="card-personajes" class="row row-cols-1 row-cols-md-5 g-4">
+
+
+
+        </div>
+    </div>
+</section>
+<script>
+    $.getScript("/pages/personajes.js");
+</script>

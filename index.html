@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header id="header" class=""><!--HEADER-->
+        <div class="dota"><a href="/">
+                <img src="imagenes/dota.png" alt="">
+                <h1>Dota 2</h1>
+            </a>
+        </div>
+
+        <div class="juega-gratis">
+            <button><a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank"><i
+                        class="bi bi-steam"></i>JUEGA GRATIS</a></button>
+        </div>
+
+    </header><!--HEADER-->
+
+
+
+
+
+    <nav id="barra-navegacion" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <!--------------------NAV-------------------------->
+        <div class="container">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#novedades">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#paises">Paises</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#juega">JUEGA AHORA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#personajes" id="personaje">Héroes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#torneos" id="torneos">Torneos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipos" id="equipos">EQUIPOS</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav><!--------------------NAV-------------------------->
+
+    <main id="main-contenido"><!--------------------CONTENIDO-------------------------->
+
+
+
+        <main id="video">
+
+            <video muted autoplay loop>
+                <source src="imagenes/diretide.mp4" type="video/mp4">
+            </video>
+            <div class="capa">
+
+
+            </div>
+        </main>
+        <!--  <section id="banner">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+   
+        </section>-->
+        <!--------------------BANNER-------------------------->
+
+
+        <section id="noticias" class="padded"><!--------------------ORIGEN-------------------------->
+            <div class="ultimas">
+                <h1>ÚLTIMAS NOTICIAS</h1>
+
+            </div>
+            <div class="row">
+
+                <div class="col">
+
+                    <img src="imagenes/noticia1.jpg" alt="">
+                    <div class="contenido">
+                        <span>5 ENERO 2023</span>
+                        <h2>Nuevo Evento de Verano</h2>
+                        <div class="texto-noticia">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vel mollitia autem
+                                quo enim sequi quidem ad eaque, voluptates, a aliquam praesentium! Numquam itaque labore
+                                necessitatibus, quia ipsa aliquid amet.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <img src="imagenes/noticia2.jpg" alt="">
+                    <div class="contenido">
+                        <span>20 DE MARZO 2023</span>
+
+                        <h2>Nuevos Set de Verano</h2>
+                        <div class="texto-noticia">
+
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vel mollitia autem
+                                quo enim sequi quidem ad eaque, voluptates, a aliquam praesentium! Numquam itaque labore
+                                necessitatibus, quia ipsa aliquid amet.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <img src="imagenes/noticia3.jpg" alt="">
+                    <div class="contenido">
+                        <span>18 DE FEBRERO 2023</span>
+                        <h2>Lima Major Perú</h2>
+                        <div class="texto-noticia">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vel mollitia autem
+                                quo enim sequi quidem ad eaque, voluptates, a aliquam praesentium! Numquam itaque labore
+                                necessitatibus, quia ipsa aliquid amet.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </section><!--------------------ORIGEN-------------------------->
+
+        <section id="novedades" class="padded">
+            <div>
+                <h1>ÚNETE A LA <br> BATALLA DE LOS ANCENTROS</h1>
+                <div class="novedades-mas">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis quo pariatur cupiditate
+                        nostrum? Rem maxime natus sapiente laboriosam, provident blanditiis temporibus ducimus, cum
+                        magni, dolores corrupti praesentium aperiam explicabo assumenda doloremque porro tenetur quam
+                        quasi autem sint aliquid eaque? Tenetur tempora molestiae ea repellat dicta consequatur, eaque
+                        natus asperiores?</p>
+                    <button class="btn">VER LAS NOVEDADES</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="sombreado">
+
+
+        </section>
+        <section id="nose" class="padded">
+            <div class="padre">
+                <div class="elige">
+                    <h2>¿A QUIÉN VAS A<br> ELEGIR?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio odit, ullam accusantium nulla
+                        eligendi quidem blanditiis voluptatum sed tempora quam quos, libero </p>
+                    <button id="ver-heroes">VER TODOS LOS HEROES</button>
+                </div>
+            </div>
+        </section>
+        <section id="profesional" class="padded">
+            <div class="enblema">
+
+            </div>
+            <div class="texto">
+                <h2>EL<br> CIRCUITO<br> PROFESIONAL DE DOTA 2 </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iusto in. Recusandae dolorem
+                    dicta corrupti excepturi officia odio, atque porro nam sapiente fugiat, repudiandae eum numquam,
+                    culpa ipsa expedita officiis!</p>
+            </div>
+        </section>
+        <section id="paises" class="padded"><!--------------------PAISES-------------------------->
+            <div class="container">
+                <h2>¿EN QUE PAISES SE JUEGA DOTA 2?</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo, deserunt
+                    architecto temporibus eos,
+                    fugiat sed repudiandae suscipit libero sapiente impedit minus, fuga eum placeat! Aut expedita
+                    temporibus consequatur voluptate labore molestiae magnam sint, quos fugit error eos eius reiciendis
+                    sunt eveniet dolor, distinctio harum quas dolore ex ducimus ab?</p>
+                <div>
+                    <div class="row ">
+                        <div class="col-md-2">
+                            <ul id="paises-lista" class="list-group">
+                                <li class="list-group-item" name="peru.html">PERÚ</li>
+                                <li class="list-group-item" name="brasil.html">BRASIL</li>
+                                <li class="list-group-item" name="china.html">CHINA</li>
+                                <li class="list-group-item" name="eeuu.html">EE.UU</li>
+                                <li class="list-group-item" name="rusia.html">RUSIA</li>
+                                <li class="list-group-item" name="francia.html">FRANCIA</li>
+                                <li class="list-group-item" name="canada.html">CANADÁ</li>
+                                <li class="list-group-item" name="finlandia.html">FINLANDIA</li>
+                                <li class="list-group-item" name="ucrania.html">UCRANIA</li>
+                                <li class="list-group-item" name="alemania.html">ALEMANIA</li>
+
+                            </ul>
+
+                        </div>
+                        <div id="contenido-paises" class="col-md-10">
+
+                        </div>
+
+                    </div>
+
+
+        </section><!--------------------PAISES-------------------------->
+
+        <section id="juega" class="padded">
+            <div class="unete">
+                <h2>ÚNETE A LA <br> BATALLA</h2>
+                <button><a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank">JUEGA GRATIS
+                        AHORA</a></button>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+    </main><!--------------------CONTENIDO-------------------------->
+
+
+    <footer id="footer">
+        <div class="imagenes">
+            <img src="imagenes/valve.png" alt="">
+            <img src="imagenes/dotachica.png" alt="">
+        </div>
+        <div class="derechos">
+            <p>Dota y el logotipo de Dota son marcas comerciales y/o marcas comerciales registradas de Valve Corporation. 2022 Valve Corporation, todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="libreria/jquery-3.6.1.min.js"></script>
+    <script src="js/mian.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
